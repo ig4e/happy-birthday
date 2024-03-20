@@ -9,7 +9,7 @@ const min = document.querySelector(".minute");
 const sec = document.querySelector(".second");
 
 // variables for quiz function
-const target = 1;
+const target = 10;
 let score = 0;
 let wrong = 0;
 let attempt;
