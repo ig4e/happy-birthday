@@ -21,7 +21,6 @@
 		<div class="footer">
 			<p>Alles Gute zum Geburtstag, <i id="nae">Julia</i></p>
 		</div>
-		<script src="script.js"></script>
 	</body>
 
 	<script>
@@ -34,8 +33,7 @@
 				midnight.setHours(24, 0, 0, 0);
 				const remainingTime = midnight - now;
 
-				// Check if it's midnight
-				if (remainingTime <= 0) {
+				if (remainingTime > 5 * 60 * 60 * 1000) {
 					window.location.href = "/quiz-start.html";
 					return;
 				}
